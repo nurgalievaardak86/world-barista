@@ -1,20 +1,722 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Brown rabbit test</title>
-        <link rel="stylesheet" href="css/main.css" type="text/css" >
-    </head>
-    <body>
-        <div class="wrapper">
-            <img src="assets/twentyfour-logo.svg" alt="Twentyfour!"/>
-            <h1 id="headline">
-                THE BROWN
-            </h1>
-            <a target="_blank" href="../readme.md">Project description</a>
-            <span> · </span>
-            <a target="_blank" href="https://xd.adobe.com/view/e3a1c6ff-52f7-41ed-9e70-bad4e6e9b930-b6f2/grid"> See design</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Brown rabbit test</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+  </head>
+  <body>
+    <header class="header position-relative">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__search">
+            <form class="header__form form" action="#">
+              <button class="form__btn" type="submit">
+                <img
+                  src="./assets/icons/search.svg"
+                  alt="search"
+                  class="form__img"
+                  onclick="search()"
+                />
+              </button>
+              <input
+                class="form__search"
+                type="search"
+                name="text"
+                placeholder="search"
+              />
+              <div class="line"></div>
+            </form>
+            <ul class="header__social social">
+              <li class="social__point">
+                <a
+                  href="https://www.linkedin.com/"
+                  class="social__link"
+                  target="_blank"
+                >
+                  <img src="./assets/icons/linkedin-white.svg" alt="linkedin" />
+                </a>
+              </li>
+              <li class="social__point">
+                <a
+                  href="https://twitter.com/"
+                  class="social__link"
+                  target="_blank"
+                >
+                  <img src="./assets/icons/twitter-white.svg" alt="twitter" />
+                </a>
+              </li>
+              <li class="social__point">
+                <a
+                  href="https://www.instagram.com/"
+                  class="social__link"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/icons/instagram-white.svg"
+                    alt="instagram"
+                  />
+                </a>
+              </li>
+              <li class="social__point">
+                <a
+                  href="https://www.facebook.com/" class="social__link"
+                  target="_blank">
+                  <img src="./assets/icons/facebook-white.svg" alt="facebbok" />
+                </a>
+              </li>
+            </ul>
+            <!-- menu burger -->
+            <div class="pos-f-t">
+              <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                  <nav class="menu__list">
+                    <a href="#" class="menu__link">About us</a>
+            
+                    <a href="#" class="menu__link">Events</a>
+            
+                    <a href="#" class="menu__link ">Nordic roaster</a>
+            
+                    <a href="#" class="menu__link">Results</a>
+            
+                    <a href="#" class="menu__link">Links</a>
+            
+                    <a href="#" class="menu__link">Contact</a>
+                    
+                  </nav>
+                  <ul class="burger__social social">
+                    <li class="social__point">
+                      <a
+                        href="https://www.linkedin.com/"
+                        class="social__link"
+                        target="_blank"
+                      >
+                        <img src="./assets/icons/linkedin-white.svg" alt="linkedin" />
+                      </a>
+                    </li>
+                    <li class="social__point">
+                      <a
+                        href="https://twitter.com/"
+                        class="social__link"
+                        target="_blank"
+                      >
+                        <img src="./assets/icons/twitter-white.svg" alt="twitter" />
+                      </a>
+                    </li>
+                    <li class="social__point">
+                      <a
+                        href="https://www.instagram.com/"
+                        class="social__link"
+                        target="_blank"
+                      >
+                        <img
+                          src="./assets/icons/instagram-white.svg"
+                          alt="instagram"
+                        />
+                      </a>
+                    </li>
+                    <li class="social__point">
+                      <a
+                        href="https://www.facebook.com/" class="social__link"
+                        target="_blank">
+                        <img src="./assets/icons/facebook-white.svg" alt="facebbok" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <nav class="navbar navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </nav>
+              
+            </div>
+          </div>
+          <!-- menu burger -->
+
+          <div class="header-doc">
+            <img
+              src="./assets/logo-white.png"
+              alt="logo"
+              class="header__logo-img"
+            />
+            
+
+            <div class="header__menu menu">
+              <nav class="menu__list">
+                <a href="#" class="menu__link">About us</a>
+
+                <a href="#" class="menu__link">Events</a>
+
+                <a href="#" class="menu__link">Nordic roaster</a>
+
+                <a href="#" class="menu__link">Results</a>
+
+                <a href="#" class="menu__link">Links</a>
+
+                <a href="#" class="menu__link">Contact</a>
+              </nav>
+            </div>
+          </div>
         </div>
-        <script src="js/scripts.js" type="text/javascript"></script>
-    </body>
+      </div>
+    </header>
+    <div class="container">
+      <div class="slideshow-container">
+        <div class="slides fade">
+          <img class="slides__img" src="./assets/coff.jpg" />
+          <div class="slider__text">
+            "To create an environment in which knowledge about coffee and its
+            sphere can be obtained"
+          </div>
+        </div>
+
+        <div class="slides fade">
+          <img class="slides__img" src="./assets/milkcoffee.jpg" />
+          <div class="slider__text">
+            "This is a great introduction do the coffee industry's best beans on
+            the planet"
+          </div>
+        </div>
+
+        <div class="slides fade">
+          <img class="slides__img" src="./assets/pancakes.jpg" />
+          <div class="slider__text">
+            "Coffee in code out, this is the way of eternal life and empowerment
+            of the soul"
+          </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br />
+
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+    <section class="section">
+      <div class="container">
+        <div class="section__inner">
+          <div>
+            <div class="section__card1 cards">
+              <img
+                src="./assets/images/posts/Post thumbnail-4.png"
+                alt=""
+                class="cards__img"
+              />
+              <div class="cards-box">
+                <h3 class="cards__title">Wonderful Copenhagen 2021</h3>
+                <p class="cards__subtitle">Published 12/07/2021</p>
+                <p class="cards__desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                  ex, repudiandae labore esse fuga ipsam nesciunt repellendus
+                  quisquam sint odit assumenda facilis accusantium veritatis
+                  iste tempora voluptatum quibusdam, nulla fugit.  Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Nostrum,
+                  excepturi culpa. Odit, magni dignissimos laboriosam ullam
+                  temporibus aspernatur? Nam perferendis facere repellendus
+                  mollitia quae error laudantium delectus illo rem voluptatem!
+                </p>
+                <button
+                  class="cards__btn"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                >
+                  Read more
+                </button>
+              </div>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <img
+                        class="modal__img"
+                        src="./assets/images/posts/Post thumbnail-4.png"
+                        alt="img"
+                      />
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Wonderful Copenhagen 2021
+                      </h5>
+                      <p class="cards__subtitle">Published 12/07/2021</p>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ex nobis assumenda fugit ipsa in quidem necessitatibus
+                        placeat rem expedita numquam cumque quas corrupti
+                        accusantium, eos ut voluptates, laboriosam minus
+                        doloribus. Animi aspernatur eius eos ipsum modi fugit
+                        inventore repudiandae enim, magnam a autem repellendus
+                        doloribus perferendis, sed hic nihil minima cupiditate
+                        pariatur nobis. Molestiae odit quae tempore labore
+                        quibusdam odio. Sunt ullam dolore necessitatibus
+                        reprehenderit excepturi iusto ipsa ducimus voluptas nam
+                        voluptatum, laboriosam ex ipsam accusamus corporis
+                        quaerat nobis. Corrupti nam culpa voluptatem perferendis
+                        consequatur itaque libero quo esse nesciunt? Recusandae
+                        reiciendis voluptatibus officiis fuga, deleniti facilis
+                        necessitatibus libero magnam minima possimus tenetur
+                        totam neque nostrum doloremque. Deserunt quam quidem,
+                        laborum magnam, repellendus laboriosam quae, quis eum
+                        odio fuga nemo! Earum nam doloribus, rerum accusamus
+                        molestias architecto qui, alias consequuntur quos
+                        laudantium autem repudiandae provident quisquam
+                        molestiae error. Minima nihil aliquid, doloremque
+                        inventore libero dicta asperiores aperiam fuga harum
+                        blanditiis? Dolorem iusto voluptates dolor eos amet et
+                        velit, aliquid rem quod id consequuntur incidunt error
+                        repudiandae magnam omnis? Molestiae error animi est
+                        iusto voluptatem fugiat veniam eveniet. Quos, amet
+                        eligendi. <span class="modal-body-desc">Distinctio dolorum ea odio repellendus
+                        dolorem, at reiciendis harum quibusdam itaque quae, unde
+                        nisi vitae consequatur ipsum. Voluptatum iusto
+                        molestias, nostrum incidunt reprehenderit vero corrupti
+                        earum culpa minima dolore vel. Nam quas impedit esse?
+                        Dolorum, sequi ea veniam tempora quia est accusamus
+                        repudiandae inventore cumque perspiciatis quis aut minus
+                        placeat atque distinctio delectus at ut? Qui tenetur
+                        animi unde sequi? Aperiam, voluptatibus. Alias qui,
+                        reprehenderit doloremque id asperiores nam veniam ipsa
+                        cumque voluptatum deserunt accusamus repellat. Nostrum
+                        vero dolorem possimus asperiores, ad ipsum quisquam
+                        totam error minima quo at voluptates. Aperiam accusamus
+                        sapiente, modi obcaecati labore excepturi eos facere
+                        harum. Quasi facilis minus culpa tempora recusandae nisi
+                        architecto dolore praesentium minima inventore. Expedita
+                        similique, cupiditate eaque nisi incidunt voluptatem
+                        nemo.</span> 
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        onclick="closeup()"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal -->
+            </div>
+            <div class="section__card2 cards">
+              <img
+                src="./assets/images/posts/Post thumbnail-1.png"
+                alt=""
+                class="cards__img"
+              />
+              <div class="cards-box">
+                <h3 class="cards__title">
+                  The most expensive coffee on the market
+                </h3>
+                <p class="cards__subtitle">Published 12/07/2021</p>
+                <p class="cards__desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                  ex, repudiandae labore esse fuga ipsam nesciunt repellendus
+                  quisquam sint odit assumenda facilis accusantium veritatis
+                  iste tempora voluptatum quibusdam, nulla fugit. Lorem ipsum
+                  dolor sit amet, consectetur adipisicing elit. Voluptatibus
+                  nostrum exercitationem molestias architecto quaerat rerum
+                  optio eligendi labore, aut mollitia quia perspiciatis libero
+                  adipisci quos consequatur neque vitae quo minus!
+                </p>
+                <button
+                  class="cards__btn"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                >
+                  Read more
+                </button>
+              </div>
+            </div>
+            <div class="section__card3 cards">
+              <img
+                src="./assets/images/posts/Post thumbnail-2.png"
+                alt=""
+                class="cards__img"
+              />
+              <div class="cards-box">
+                <h3 class="cards__title">
+                  10 type of coffee beans you need to know
+                </h3>
+                <p class="cards__subtitle">Published 12/07/2021</p>
+                <p class="cards__desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                  ex, repudiandae labore esse fuga ipsam nesciunt repellendus
+                  quisquam sint odit assumenda facilis accusantium veritatis
+                  iste tempora voluptatum quibusdam, nulla fugit. Lorem ipsum
+                  dolor sit amet consectetur, adipisicing elit. Consectetur
+                  explicabo architecto at delectus ratione aspernatur,
+                  consequatur quibusdam ipsum, iste ullam non maxime earum
+                  doloremque nobis, impedit cum voluptas possimus cumque?
+                </p>
+                <button
+                  class="cards__btn"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                >
+                  Read more
+                </button>
+              </div>
+            </div>
+            <div class="section__card4 cards">
+              <img
+                src="./assets/images/posts/Post thumbnail-3.png"
+                alt=""
+                class="cards__img"
+              />
+              <div class="cards-box">
+                <h3 class="cards__title">
+                  Challenge your barista skills to the max
+                </h3>
+                <p class="cards__subtitle">Published 12/07/2021</p>
+                <p class="cards__desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                  ex, repudiandae labore esse fuga ipsam nesciunt repellendus
+                  quisquam sint odit assumenda facilis accusantium veritatis
+                  iste tempora voluptatum quibusdam, nulla fugit. Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Vero, doloribus
+                  laboriosam suscipit atque temporibus incidunt libero obcaecati
+                  eos voluptas impedit quae repellendus quam ipsa fugit quo quia
+                  laborum? Consectetur, cupiditate!
+                </p>
+                <button
+                  class="cards__btn"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                >
+                  Read more
+                </button>
+              </div>
+            </div>
+
+            <div class="line__btn"></div>
+            <div class="button-box">
+              <button id="prev">Previous</button>
+              <p class="page">Page 1 of 5</p>
+              <button id="next">Next</button>
+            </div>
+          </div>
+          <div class="aside__doc">
+            <aside class="aside1">
+              <h5 class="aside1__title">WBS shop</h5>
+              <p class="aside1__desc">Your shopping car is empty</p>
+              <button class="aside1__btn">Visit the shop</button>
+              <div class="aside__line"></div>
+            </aside>
+            <aside class="aside2">
+              <h5 class="aside2__title">Next event</h5>
+              <p class="aside2__subtitle">World Barista Cup 2021</p>
+              <p class="aside2__desc">Copenhagen, Denmark</p>
+              <p class="aside2__desc">Dates: 25th - 27th August 2011</p>
+              <p class="aside2__desc">Them: sensory</p>
+              <button class="aside2__btn">Sign up now</button>
+              <div class="aside__line"></div>
+            </aside>
+            <aside class="aside3">
+              <h5 class="aside3__title">Scoreboard</h5>
+              <p class="aside3__subtitle">List of winners from last year</p>
+              <ul class="aside3__point">
+                <li class="aside3__list">2021 - ?</li>
+                <li class="aside3__list">2020 - Denmark</li>
+                <li class="aside3__list">2021 - Sweden</li>
+                <li class="aside3__list">2021 - Turkey</li>
+                <li class="aside3__list">2021 - Italy</li>
+                <li class="aside3__list">2021 - Italy</li>
+                <li class="aside3__list">2021 - Germany</li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+        <div class="section__line"></div>
+      </div>
+    </section>
+    <section class="sponsors">
+      <div class="container">
+        <h4 class="sponsors__title">World Barista Cup Sponsors</h4>
+        <div class="sponsors__co">
+          <img
+            src="./assets/images/sponsors/sponsor-20.png"
+            alt="icon"
+            class="sponsors__img"
+          />
+          <img
+            src="./assets/images/sponsors/sponsor-1.png"
+            alt="icon"
+            class="sponsors__img"
+          />
+          <img
+            src="./assets/images/sponsors/sponsor-2.png"
+            alt="icon"
+            class="sponsors__img"
+          />
+          <img
+            src="./assets/images/sponsors/sponsor-3.png"
+            alt="icon"
+            class="sponsors__img"
+          />
+          <img
+            src="./assets/images/sponsors/sponsor-4.png"
+            alt="icon"
+            class="sponsors__img"
+          />
+          <img
+            src="./assets/images/sponsors/sponsor-5.png"
+            alt="icon"
+            class="sponsors__img"
+          />
+          <img
+            src="./assets/images/sponsors/sponsor-6.png"
+            alt="icon"
+            class="sponsors__img"
+          />
+          <img
+            src="./assets/images/sponsors/sponsor-7.png"
+            alt="icon"
+            class="sponsors__img"
+          />
+          <img
+            src="./assets/images/sponsors/sponsor-8.png"
+            alt="icon"
+            class="sponsors__img"
+          />
+          <img
+            src="./assets/images/sponsors/sponsor-9.png"
+            alt="icon"
+            class="sponsors__img"
+          />
+          <img
+            src="./assets/images/sponsors/sponsor-10.png"
+            alt="icon"
+            class="sponsors__img"
+          />
+          <img
+            src="./assets/images/sponsors/sponsor-11.png"
+            alt="icon"
+            class="sponsors__img"
+          />
+          <img
+            src="./assets/images/sponsors/sponsor-12.png"
+            alt="icon"
+            class="sponsors__img"
+          />
+          <img
+            src="./assets/images/sponsors/sponsor-13.png"
+            alt="icon"
+            class="sponsors__img"
+          />
+          <img
+            src="./assets/images/sponsors/sponsor-14.png"
+            alt="icon"
+            class="sponsors__img"
+          />
+          <img
+            src="./assets/images/sponsors/sponsor-15.png"
+            alt="icon"
+            class="sponsors__img"
+          />
+          <img
+            src="./assets/images/sponsors/sponsor-16.png"
+            alt="icon"
+            class="sponsors__img"
+          />
+          <img
+            src="./assets/images/sponsors/sponsor-17.png"
+            alt="icon"
+            class="sponsors__img"
+          />
+          <img
+            src="./assets/images/sponsors/sponsor-18.png"
+            alt="icon"
+            class="sponsors__img"
+          />
+          <img
+            src="./assets/images/sponsors/sponsor-19.png"
+            alt="icon"
+            class="sponsors__img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__social-box">
+            <img
+              src="./assets/logo-white.png"
+              alt="logo"
+              class="header__logo-img"
+            />
+            <ul class="footer__social">
+              <li class="footer__point">
+                <a
+                  href="https://www.linkedin.com/"
+                  class="footer__link"
+                  target="_blank"
+                >
+                  <img src="./assets/icons/linkedin-white.svg" alt="linkedin" />
+                </a>
+              </li>
+              <li class="footer__point">
+                <a
+                  href="ttps://twitter.com/"
+                  class="footer__link"
+                  target="_blank"
+                >
+                  <img src="./assets/icons/twitter-white.svg" alt="twitter" />
+                </a>
+              </li>
+              <li class="footer__point">
+                <a
+                  href="https://www.instagram.com/"
+                  class="footer__link"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/icons/instagram-white.svg"
+                    alt="instagram"
+                  />
+                </a>
+              </li>
+              <li class="footer__point">
+                <a
+                  href="https://www.facebook.com/"
+                  class="footer__link"
+                  target="_blank"
+                >
+                  <img src="./assets/icons/facebook-white.svg" alt="facebbok" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__line"></div>
+          <div class="footer__wrap">
+            <div class="footer__box">
+              <h5 class="footer__title">About World Barista Cup</h5>
+              <h6 class="footer__subtitle">
+                The vision within The World Barista Cup
+              </h6>
+              <p class="footer__desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa
+                fugiat, ducimus sed et earum eum modi explicabo accusantium
+                incidunt ad totam veritatis? Enim quas, magni ipsum nesciunt
+                doloribus necessitatibus recusandae.
+                <span class="footer__desc-hide"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Saepe dolor porro debitis vitae fugit vero inventore animi?
+                  Labore sapiente inventore nobis ipsum a cumque hic, ea nam
+                  quam maiores! Dolore?</span
+                >
+              </p>
+            </div>
+            <div class="footer__instagram-feed">
+              <h5 class="footer__title">Instagram feed</h5>
+              <div class="footer__img-box">
+                <img
+                  src="./assets/images/instagram-feed/instagram-image-9.png"
+                  alt="icon"
+                  class="footer__img"
+                />
+                <img
+                  src="./assets/images/instagram-feed/instagram-image-1.png"
+                  alt="icon"
+                  class="footer__img"
+                />
+                <img
+                  src="./assets/images/instagram-feed/instagram-image-2.png"
+                  alt="icon"
+                  class="footer__img"
+                />
+                <img
+                  src="./assets/images/instagram-feed/instagram-image-3.png"
+                  alt="icon"
+                  class="footer__img"
+                />
+                <img
+                  src="./assets/images/instagram-feed/instagram-image-4.png"
+                  alt="icon"
+                  class="footer__img"
+                />
+                <img
+                  src="./assets/images/instagram-feed/instagram-image-5.png"
+                  alt="icon"
+                  class="footer__img"
+                />
+                <img
+                  src="./assets/images/instagram-feed/instagram-image-6.png"
+                  alt="icon"
+                  class="footer__img"
+                />
+                <img
+                  src="./assets/images/instagram-feed/instagram-image-7.png"
+                  alt="icon"
+                  class="footer__img"
+                />
+                <img
+                  src="./assets/images/instagram-feed/instagram-image-8.png"
+                  alt="icon"
+                  class="footer__img"
+                />
+              </div>
+            </div>
+            <div class="footer__contact contact">
+              <h5 class="contact__title">Contact</h5>
+              <h6 class="contact__subtitle">World Barista Cup</h6>
+              <address class="contact__address">
+                <p class="contact__street">Amagertorv 13</p>
+                <p class="contact__street">1160 Copenhagen K</p>
+                <a href="#" class="contact__phone">+45 33 12 04 28</a><br />
+                <a href="#" class="contact__cvr">CVR: 11427693</a><br />
+                <a href="#" class="contact__mail"
+                  >Email: info@worldbaristacup.com</a
+                >
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/scripts.js"></script>
+  </body>
 </html>
